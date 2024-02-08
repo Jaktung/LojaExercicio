@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f8f7f3;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #15aaff;
+    padding: 16px;
+    color: #f8f7f3;
+}
+
+header li, header a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 6px;
+    color: #f8f7f3
+}
+
+header a:hover{
+    color: rgb(34, 34, 34);
+}
+
+section{
+    margin-top: 20px;
+}
+
+section h2{
+    color: #15aaff;
+    padding: 1em 0;
+    border-bottom: 2px solid #15aaff;
+}
+
+.sobre{
+    display: flex;
+}
+
+.sobre li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+.sobre p{
+    margin-top: 10px;
+}
+
+.sobre img{
+    height: 520px;
+}
+
+.produtos img{
+    height: 320px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.produtos button{
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #15aaff;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #f8f7f3;
+}
+
+.produtos p, .produtos h4{
+    padding: 10px 0;
+}
+
+.colunas-produtos{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1.76%;
+}
+
+footer{
+    background-color: #15aaff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre{
+        display: block;
+    }
+
+    .colunas-produtos{
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+    }
+
+    button{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 641px){
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre{
+        display: block;
+    }
+
+    .colunas-produtos{
+        margin-top: 1em;
+        display: block;
+    
+    }
+    .produtos img{
+        height: 320px;
+        border: 1px solid black;
+        width: 320px;
+    }
+
+    button{
+        margin-bottom: 10px;
+    }
+
+}
+
